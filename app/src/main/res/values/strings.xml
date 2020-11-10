@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VerizonFirstApp</string>
+    <string name="mystring">  हिन्दी</string>
 </resources>
