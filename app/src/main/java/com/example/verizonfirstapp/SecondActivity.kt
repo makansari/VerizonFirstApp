@@ -9,7 +9,7 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-       var result = intent.extras?.getString("keyusername")
-        textViewSecondResult.setText(result)
+//       var result = intent.extras?.getString("keyusername")
+//        textViewSecondResult.setText(result)
     }
 }

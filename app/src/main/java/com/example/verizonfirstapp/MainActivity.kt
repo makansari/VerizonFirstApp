@@ -1,6 +1,7 @@
 package com.example.verizonfirstapp
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -13,14 +14,27 @@ class MainActivity : AppCompatActivity() {
 
         buttonSubmit.setOnClickListener {
 
-           var username = editTextUsername.text.toString()
+          /* var username = editTextUsername.text.toString()
 
             Toast.makeText(this,"Username is : $username",Toast.LENGTH_LONG).show()
             textViewUsername.setText(username)
 
             var myIntent = Intent(this,SecondActivity::class.java)
             myIntent.putExtra("keyusername",username)
+            startActivity(myIntent)*/
+
+           /* var myIntent = Intent("karthik")
+            startActivity(myIntent)*/
+
+          /*  var myIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:98585858585"))
+            startActivity(myIntent)*/
+
+          /*  var myIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:98585858585"))
+            startActivity(myIntent)*/
+            var myIntent = Intent(Intent.ACTION_VIEW,Uri.parse("http://google.com"))
             startActivity(myIntent)
+
+
         }
     }
 }
